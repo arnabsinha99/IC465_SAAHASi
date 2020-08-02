@@ -1,3 +1,6 @@
+import time
+
+start =time.clock()
 import warnings
 warnings.filterwarnings("ignore")
 import sys
@@ -19,6 +22,8 @@ from fastai.metrics import error_rate,accuracy,fbeta
 from segment import segment_leaf
 BATCH_SIZE = 64
 
+# start =time.clock()
+
 
 
 x = ['Apple___Apple_scab','Apple___Black_rot','Apple___Cedar_apple_rust', 'Apple___healthy',
@@ -26,12 +31,13 @@ x = ['Apple___Apple_scab','Apple___Black_rot','Apple___Cedar_apple_rust', 'Apple
      'Potato___healthy','Potato___Late_blight']
 
 # print("model export2")
-model_name='export1-1.pkl'
+model_name='export2.pkl' #resnet50
 model_dir=os.getcwd()+ "/ignore"
 
 learn = load_learner(model_dir,model_name)
 
-
+print("File Name \t\t\t Prediction")
+print("--------------------------------------------------------------------")
 m1=[]
 y=os.listdir('./test')
 # print(y)
@@ -54,13 +60,16 @@ for fname in y:
     # print(fname,x[pred_idx],pred,probs)
     # print(fname,pred,pred_idx,probs)
    
-# img1=open_image('./test/ah1.jpg')
+
+
+# img1=open_image('./test/Apple_BlackRot1.JPG')
 # pred,pred_idx,probs = learn.predict(img1)
 # print("ah1","\t\t\t",x[pred_idx])
-# img1=open_image('./test/cpm1.jpg')
+# # img1=open_image('./test/cpm1.jpg')
 # pred,pred_idx,probs = learn.predict(img1)
 # print("cpm1","\t\t\t",x[pred_idx])
-
+el=time.clock()-start
+print(el)
 
 # fname='cdr.jpg'
 # img=open_image(os.path.join('./test/',fname))
