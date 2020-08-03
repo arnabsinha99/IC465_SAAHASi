@@ -1,0 +1,82 @@
+2020-08-03 02:14:00,739 ERROR: Exception on /api/explore [GET] [in /home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/anushrut/workload/flask-blog/app/main/routes.py", line 27, in api_explore
+    data = Post.to_collection_dict(Post.query, page, per_page, 'api_explore')
+AttributeError: type object 'Post' has no attribute 'to_collection_dict'
+2020-08-03 02:16:22,750 INFO: flask Project [in /home/anushrut/workload/flask-blog/app/__init__.py:81]
+2020-08-03 02:16:27,000 ERROR: Exception on /api/explore [GET] [in /home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/anushrut/workload/flask-blog/app/main/routes.py", line 27, in api_explore
+    data = User.to_collection_dict(User.query, page, per_page, 'api_explore')
+AttributeError: type object 'User' has no attribute 'to_collection_dict'
+2020-08-03 02:17:12,838 INFO: flask Project [in /home/anushrut/workload/flask-blog/app/__init__.py:81]
+2020-08-03 02:20:54,045 INFO: flask Project [in /home/anushrut/workload/flask-blog/app/__init__.py:81]
+2020-08-03 02:21:02,779 ERROR: Exception on /api/explore [GET] [in /home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/anushrut/workload/flask-blog/app/main/routes.py", line 27, in api_explore
+    data = User.to_collection_dict(User.query, page, per_page, 'api_explore')
+  File "/home/anushrut/workload/flask-blog/app/models.py", line 22, in to_collection_dict
+    'items': [item.to_dict() for item in resources.items],
+  File "/home/anushrut/workload/flask-blog/app/models.py", line 22, in <listcomp>
+    'items': [item.to_dict() for item in resources.items],
+  File "/home/anushrut/workload/flask-blog/app/models.py", line 114, in to_dict
+    'self': url_for('api.get_user', id=self.id),
+NameError: name 'url_for' is not defined
+2020-08-03 02:21:35,993 INFO: flask Project [in /home/anushrut/workload/flask-blog/app/__init__.py:81]
+2020-08-03 02:21:39,290 ERROR: Exception on /api/explore [GET] [in /home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anushrut/workload/flask-blog/blog/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/anushrut/workload/flask-blog/app/main/routes.py", line 27, in api_explore
+    data = Post.to_collection_dict(Post.query, page, per_page, 'api_explore')
+  File "/home/anushrut/workload/flask-blog/app/models.py", line 30, in to_collection_dict
+    'self': url_for(endpoint, page=page, per_page=per_page,
+NameError: name 'url_for' is not defined
+2020-08-03 02:23:00,675 INFO: flask Project [in /home/anushrut/workload/flask-blog/app/__init__.py:81]
+2020-08-03 02:23:56,937 INFO: flask Project [in /home/anushrut/workload/flask-blog/app/__init__.py:81]
