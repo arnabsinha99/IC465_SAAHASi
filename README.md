@@ -14,6 +14,7 @@ Android Mobile with a working camera
 - Fast.ai
 - OpenCV
 - Flask
+- Java
 - Heroku CLI
 
 ## Dataset Used
