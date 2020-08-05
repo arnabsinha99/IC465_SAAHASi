@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_my_crop"
+        android:icon="@drawable/agriculture"
+        android:title="@string/title_my_crop" />
+
+    <item
+        android:id="@+id/navigation_community"
+        android:icon="@drawable/forum"
+        android:title="@string/title_community" />
+
+    <item
+        android:id="@+id/navigation_change_language"
+        android:icon="@drawable/translation"
+        android:title="@string/title_change_language" />
+    <item
+        android:id="@+id/navigation_contact_us"
+        android:icon="@drawable/review"
+        android:title="@string/title_contact_us" />
+</menu>

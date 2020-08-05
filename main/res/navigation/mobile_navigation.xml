@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_my_crop">
+
+    <fragment
+        android:id="@+id/navigation_my_crop"
+        android:name="com.example.android.khushhali.ui.myCrop.MyCropFragment"
+        android:label="@string/title_my_crop"
+        tools:layout="@layout/fragment_crop" />
+
+    <fragment
+        android:id="@+id/navigation_community"
+        android:name="com.example.android.khushhali.ui.community.CommunityFragment"
+        android:label="@string/title_community"
+        tools:layout="@layout/fragment_community" />
+
+    <fragment
+        android:id="@+id/navigation_change_language"
+        android:name="com.example.android.khushhali.ui.changeLanguage.ChangeLanguageFragment"
+        android:label="@string/title_change_language"
+        tools:layout="@layout/fragment_change_language" />
+    <fragment
+        android:id="@+id/navigation_contact_us"
+        android:name="com.example.android.khushhali.ui.contactUs.ContactUsFragment"
+        android:label="@string/title_contact_us"
+        tools:layout="@layout/fragment_contact_us" />
+</navigation>

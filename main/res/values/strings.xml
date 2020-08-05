@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Khushhali</string>
+    <string name="title_my_crop">My Crop</string>
+    <string name="title_community">Community</string>
+    <string name="title_contact_us">Expert Advice</string>
+    <string name="title_change_language">Change Language</string>
+</resources>
