@@ -29,4 +29,7 @@ The model and forum are deployed on the Heroku server and are easily accessible 
 - For Model: https://sih-heroku.herokuapp.com/
 - For Forum: https://flask-by-senju.herokuapp.com/explore?page=1
 
+## Application
+The application can be installed by navigating to apk/debug/app-debug.apk and downloading it in your android devices.
+
 Please find the [trailer video](https://www.youtube.com/watch?v=m80wFpbHFAk&feature=youtu.be) of our project on [youtube](https://www.youtube.com/watch?v=m80wFpbHFAk&feature=youtu.be).
