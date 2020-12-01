@@ -2,7 +2,7 @@
 Official repository for Team SAAHASi for SIH Finals 2020.
 
 ## Overview
-We aim to develop a mobile application that will help the farmers in detection of different types of diseases and will provide affective solutions for the same.
+We aim to develop a mobile application that will help the farmers in detection of different types of diseases and will provide effective solutions for the same.
 
 ## Pre-Requisites
 Android Mobile with a working camera
